@@ -1,0 +1,1905 @@
+header {
+  // width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: $lightpink;
+  margin: 1rem;
+  border-radius: 1rem;
+  @include mediumDevice {
+    margin: 0;
+    border-radius: 0;
+  }
+  @include extraSmallDevice {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .chatbox {
+    width: 4rem;
+    position: fixed;
+    z-index: 1000000;
+    bottom: 2rem;
+    right: 2rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @include extraSmallDevice {
+      width: 3.2rem;
+      right: 1rem;
+      bottom: 1.5rem;
+    }
+  }
+
+  .bigCircle {
+    width: 90rem;
+    height: 90rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    left: -25%;
+    z-index: 10;
+    background-color: $blueVoilet;
+
+    @include bigLaptop {
+      width: 80rem;
+      height: 80rem;
+      top: -20%;
+      left: -40%;
+    }
+    @include largeDevice {
+      width: 70rem;
+      height: 80rem;
+      top: -20%;
+      left: -35%;
+    }
+    @include tabHorizontal {
+      display: none;
+    }
+    @include mediumDevice {
+      display: none;
+    }
+    @include extraSmallDevice {
+      display: none;
+    }
+  }
+  #headerSec {
+    height: calc(90vh - 100px);
+    @include flexrow;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+    @include largeDevice {
+      height: 100%;
+      // height: 120vh;
+      // height: calc(90vh - 100px);
+      padding: 2rem 0;
+      padding-bottom: 8rem;
+    }
+    @include tabHorizontal {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 5rem 0;
+    }
+    @include mediumDevice {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 5rem 0;
+    }
+    @include smallDevice {
+      row-gap: 2rem;
+    }
+    @include extraSmallDevice {
+      // height: 120vh;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 2rem;
+      padding: 0;
+      padding-bottom: 2rem;
+    }
+
+    .headerTextCont {
+      width: 50%;
+      height: 100%;
+      @include flexrow;
+      flex-direction: column;
+      align-items: start;
+      z-index: 10;
+      position: relative;
+
+      .pinkBall {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: leaf2 2s ease-out alternate infinite;
+        @include largeDevice {
+          left: 5%;
+          bottom: -20%;
+        }
+        @include tabHorizontal {
+          left: 5%;
+          top: 10%;
+        }
+        @include mediumDevice {
+          left: 5%;
+          top: 10%;
+        }
+        @include extraSmallDevice {
+          display: none;
+        }
+
+        @keyframes leaf2 {
+          100% {
+            transform: translate(2vw, -4vh) rotate(25deg);
+          }
+        }
+      }
+      @include largeDevice {
+        padding-left: 2rem;
+      }
+      @include tabHorizontal {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      @include mediumDevice {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      @include extraSmallDevice {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      h1 {
+        font-size: 3.6rem;
+        font-family: $header-font;
+        span {
+          font-family: serif;
+          color: $voilet;
+        }
+        @include extraSmallDevice {
+          font-size: 2.5rem;
+        }
+        @include smallMobile {
+          font-size: 2.2rem;
+        }
+      }
+      p {
+        margin: 2rem 0;
+        @include extraSmallDevice {
+          width: 80%;
+        }
+      }
+      h5 {
+        color: $voilet;
+        @include flexrow;
+        cursor: pointer;
+
+        a {
+          @include extraSmallDevice {
+            font-size: 1.1rem;
+          }
+        }
+        #pin {
+          width: 1.3rem;
+          height: 1.3rem;
+          border-radius: 50%;
+          background-color: $darkBlue;
+          margin-left: 3rem;
+          position: relative;
+          &::before {
+            content: "";
+            width: 2rem;
+            height: 2px;
+            background-color: $voilet;
+            position: absolute;
+            top: 50%;
+            left: -100%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    .headerMediaCont {
+      width: 50%;
+      position: relative;
+      @include flexrow;
+
+      .blueBall {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: leaf1 2s ease-out alternate infinite;
+        @include bigLaptop {
+          right: 5%;
+        }
+        @include largeDevice {
+          right: 6%;
+        }
+        @include tabHorizontal {
+          right: -15%;
+        }
+        @include mediumDevice {
+          right: 6%;
+        }
+        @include extraSmallDevice {
+          display: none;
+        }
+
+        @keyframes leaf1 {
+          100% {
+            transform: translate(2vw, -4vh) rotate(25deg);
+          }
+        }
+      }
+      @include mediumDevice {
+        width: 100%;
+      }
+      @include extraSmallDevice {
+        width: 100%;
+      }
+      .videoCont {
+        width: 24rem;
+        height: 31rem;
+        border-radius: 1.8rem;
+        @include flexrow;
+        flex-direction: column;
+        justify-content: start;
+        background-color: $white;
+        @include largeDevice {
+          width: 22rem;
+          height: 28rem;
+        }
+        @include tabHorizontal {
+          width: 22rem;
+          height: 28rem;
+        }
+        @include extraSmallDevice {
+          width: 22rem;
+          height: 30rem;
+        }
+        @include mediumMobile {
+          width: 20rem;
+          height: 28rem;
+        }
+        @include smallMobile {
+          width: 18rem;
+          height: 26rem;
+        }
+        .videoHeaderBox {
+          width: 100%;
+          padding: 0.8rem 2rem;
+          background-color: $black;
+          @include flexrow;
+          justify-content: start;
+          border-top-right-radius: 1.8rem;
+          border-top-left-radius: 1.8rem;
+
+          .threeDots {
+            width: 10rem;
+            @include flexrow;
+            justify-content: start;
+            div {
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              margin-right: 0.4rem;
+              &.red {
+                background-color: red;
+              }
+              &.yellow {
+                background-color: yellow;
+              }
+              &.green {
+                background-color: rgb(9, 249, 9);
+              }
+            }
+          }
+        }
+        .videoBoxCont {
+          width: 100%;
+          height: 100%;
+          @include flexrow;
+          flex-direction: column;
+          position: relative;
+
+          .videoBox {
+            width: 18rem;
+            height: 18rem;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+
+            @include largeDevice {
+              width: 15rem;
+              height: 15rem;
+            }
+            @include tabHorizontal {
+              width: 16rem;
+              height: 16rem;
+            }
+            @include extraSmallDevice {
+              width: 16rem;
+              height: 16rem;
+            }
+            @include mediumMobile {
+              width: 16rem;
+              height: 16rem;
+            }
+            @include smallMobile {
+              width: 14rem;
+              height: 14rem;
+            }
+
+            #video {
+              width: 134%;
+              height: 100%;
+              object-fit: cover;
+              margin-left: -97px;
+              @include largeDevice {
+                margin-left: -80px;
+              }
+              @include tabHorizontal {
+                margin-left: -80px;
+              }
+              @include mediumDevice {
+                width: 190%;
+                margin-left: -170px;
+              }
+              @include extraSmallDevice {
+                width: 180%;
+                margin-left: -120px;
+              }
+            }
+          }
+          .playBtn {
+            position: absolute;
+            border-radius: 50%;
+            right: 10%;
+            top: 50%;
+            z-index: 100;
+            background-image: linear-gradient(#c6c5c566, #ffffff1a);
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            @include extraSmallDevice {
+              width: 4.5rem;
+              height: 4.5rem;
+            }
+          }
+
+          h4 {
+            margin: 1rem 0;
+          }
+          .bar1 {
+            width: 10rem;
+            height: 0.8rem;
+            border-radius: 1rem;
+            background-color: $darkBlue;
+            margin-bottom: 0.5rem;
+          }
+          .bar2 {
+            width: 8rem;
+            height: 0.8rem;
+            border-radius: 1rem;
+            background-color: $blueVoilet;
+          }
+        }
+      }
+    }
+  }
+}
+
+.courseSec {
+  width: 100%;
+  @include flexrow;
+
+  #courseSec {
+    height: 100%;
+    @include flexrow;
+    justify-content: space-between;
+    align-items: start;
+
+    @include largeDevice {
+      height: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 10rem;
+    }
+    @include tabHorizontal {
+      height: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 8rem;
+    }
+    @include mediumDevice {
+      height: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 8rem;
+    }
+    @include extraSmallDevice {
+      height: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 6rem;
+    }
+
+    .courseImgBox {
+      width: 30%;
+      position: relative;
+      margin-top: 6rem;
+      @include bigLaptop {
+        width: 34%;
+        @include flexrow;
+        justify-content: end;
+      }
+      @include largeDevice {
+        width: 40%;
+        @include flexrow;
+        justify-content: end;
+        margin-top: 0;
+      }
+      @include tabHorizontal {
+        width: 60%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+      @include mediumDevice {
+        width: 60%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+      @include extraSmallDevice {
+        width: 90%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+
+      .courseImgCont {
+        width: 28rem;
+        height: 26rem;
+        z-index: 10;
+        background-color: $lightVoilet;
+        border-radius: 1.8rem;
+        position: absolute;
+        top: -4%;
+        left: -10%;
+        @include flexrow;
+        // border: 1px solid red;
+        @include bigLaptop {
+          left: -2%;
+        }
+        @include largeDevice {
+          left: 2%;
+        }
+        @include tabHorizontal {
+          left: 12%;
+        }
+        @include smallTabHorizontal {
+          left: 5%;
+        }
+        @include mediumDevice {
+          left: -5%;
+        }
+        @include smallDevice {
+          left: -10%;
+        }
+        @include extraSmallDevice {
+          position: relative !important;
+          width: 100%;
+          height: 100%;
+          left: 0%;
+          top: 0;
+        }
+
+        .courseImg {
+          width: 30rem;
+          height: 30rem;
+          object-fit: cover;
+          position: absolute;
+          top: -15%;
+          right: -20%;
+          bottom: 0;
+          @include largeDevice {
+            right: -12%;
+          }
+          @include largeDevice {
+            right: -15%;
+          }
+          @include smallTabHorizontal {
+            right: -15%;
+          }
+          @include extraSmallDevice {
+            position: relative !important;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0%;
+            object-fit: cover;
+            overflow: visible;
+          }
+          @include smallMobile {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            object-fit: cover;
+          }
+        }
+        .courseNameBox {
+          // width: 70%;
+          padding: 1rem;
+          background-color: $white;
+          z-index: 100;
+          border-radius: 1rem;
+          position: absolute;
+          // left: 16%;
+          right: 0;
+          bottom: -5%;
+          // transform: translateX(-50%);
+          @include flexrow;
+          flex-direction: column;
+          text-align: center;
+          box-shadow: 0px 4px 4.8px 0px rgba(102, 99, 225, 0.21);
+          transform: rotate(-35deg);
+          // flex-shrink: 0;
+          @include extraSmallDevice {
+            padding: 1rem;
+          }
+          @include mediumMobile {
+            display: none;
+          }
+          @include smallMobile {
+            display: none;
+          }
+          .dot {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: $black;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+          }
+
+          Img {
+            width: 4rem;
+            @include extraSmallDevice {
+              width: 3rem;
+            }
+          }
+          h5 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            @include extraSmallDevice {
+              font-size: 1.2rem;
+              margin-bottom: 0;
+            }
+            @include smallMobile {
+              font-size: 1.1rem;
+            }
+          }
+          h6 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 0;
+            @include extraSmallDevice {
+              font-size: 0.8rem;
+            }
+            @include smallMobile {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .courseBack {
+        background-color: #fad0f4;
+        position: relative;
+        z-index: -1;
+        border-radius: 1.8rem;
+        @include extraSmallDevice {
+          display: none;
+        }
+      }
+    }
+    .courseTextCont {
+      width: 60%;
+      height: 100%;
+      @include flexrow;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      // @include bigLaptop {
+      //   width: 55%;
+      // }
+      @include largeDevice {
+        width: 100%;
+        align-items: center;
+      }
+      @include tabHorizontal {
+        width: 80%;
+        align-items: center;
+      }
+      @include mediumDevice {
+        width: 100%;
+        align-items: center;
+      }
+      @include extraSmallDevice {
+        width: 100%;
+        align-items: center;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        text-align: left;
+        margin-bottom: 4rem;
+        @include largeDevice {
+          text-align: center;
+        }
+        @include tabHorizontal {
+          text-align: center;
+          font-size: 2.4rem;
+        }
+        @include mediumDevice {
+          text-align: center;
+          font-size: 2.3rem;
+        }
+        @include extraSmallDevice {
+          margin-bottom: 1.5rem;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .courseInfoCont {
+        width: 100%;
+
+        @include largeDevice {
+          width: 80%;
+        }
+
+        .courseBoxCont {
+          width: 100%;
+          @include flexrow;
+          justify-content: space-between;
+          column-gap: 1rem;
+          margin-bottom: 2rem;
+          @include largeDevice {
+            // column-gap: 0.5rem;
+            // margin-bottom: 1rem;
+          }
+          @include tabHorizontal {
+            column-gap: 0.5rem;
+          }
+          @include mediumDevice {
+            column-gap: 0.5rem;
+          }
+          @include smallDevice {
+            column-gap: 0.5rem;
+          }
+          @include extraSmallDevice {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            flex-direction: column;
+            column-gap: 0rem;
+            row-gap: 1rem;
+          }
+
+          .courseBox {
+            padding: 0.5rem;
+            border: 1px solid $grey;
+            border-radius: 0.8rem;
+            @include flexrow;
+            cursor: pointer;
+
+            @include largeDevice {
+              width: 20%;
+            }
+            @include smallDevice {
+              width: 20%;
+            }
+            @include extraSmallDevice {
+              width: 100%;
+              padding: 1rem;
+            }
+            &.activeCourse {
+              border: 1px solid $voilet;
+              box-shadow: 0px 9px 11.3px -7px rgba(147, 92, 239, 0.54);
+            }
+            h5 {
+              margin: 0;
+              margin-left: 0.5rem;
+              font-size: 1rem;
+              @include mediumDevice {
+                font-size: 1rem;
+              }
+              @include smallDevice {
+                font-size: 0.9rem;
+              }
+              @include extraSmallDevice {
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+        .courseDetailCont {
+          width: 100%;
+          border-radius: 0.8rem;
+          border: 1px solid $grey;
+          padding-bottom: 0.5rem;
+          .courseHeader {
+            width: 100%;
+            @include flexrow;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eaecf0;
+            background: #f9fafb;
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+            h6 {
+              margin: 0;
+            }
+            @include extraSmallDevice {
+              column-gap: 1rem;
+            }
+            .levelBox {
+              width: 25%;
+              text-align: left;
+              padding: 0 1rem;
+              @include extraSmallDevice {
+                width: 30%;
+              }
+            }
+            .aboutBox {
+              width: 75%;
+              text-align: left;
+              @include extraSmallDevice {
+                width: 70%;
+              }
+            }
+          }
+          .courseDescCont {
+            width: 100%;
+
+            .courseRow {
+              width: 100%;
+              @include flexrow;
+              align-items: start;
+              justify-content: space-between;
+
+              @include extraSmallDevice {
+                column-gap: 1rem;
+              }
+              @include tabHorizontal {
+                column-gap: 1rem;
+              }
+              @include smallDevice {
+                column-gap: 1rem;
+              }
+              border-bottom: 1px solid $grey;
+              &:last-child {
+                border: none;
+              }
+              .courselevel {
+                width: 25%;
+                height: 100%;
+                padding: 1rem 0.5rem;
+                @include flexrow;
+                justify-content: start;
+                align-items: start;
+
+                @include extraSmallDevice {
+                  // width: 30%;
+                  padding: 0.5rem;
+                  text-align: center;
+                }
+                @include smallMobile {
+                  padding: 0.5rem 0;
+                  text-align: center;
+                }
+                .levelImgBox {
+                  img {
+                    @include extraSmallDevice {
+                      width: 1.5rem;
+                    }
+                    @include mediumMobile {
+                      width: 1.2rem;
+                    }
+                  }
+                }
+
+                .levelname {
+                  margin-left: 0.5rem;
+                  height: 100%;
+                  text-align: left;
+
+                  @include extraSmallDevice {
+                    margin-left: 0.5rem;
+                  }
+                  h5,
+                  p {
+                    margin: 0;
+                    @include extraSmallDevice {
+                      font-size: 0.9rem;
+                      line-height: 0.9rem;
+                    }
+                  }
+                  h5 {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    @include extraSmallDevice {
+                      font-size: 0.9rem;
+                      margin-bottom: 0.5rem;
+                    }
+                    @include mediumMobile {
+                      font-size: 0.8rem;
+                      margin-bottom: 0.3rem;
+                    }
+                  }
+                  p {
+                    font-weight: 500;
+                    @include extraSmallDevice {
+                      font-size: 0.7rem;
+                    }
+                    @include mediumMobile {
+                      font-size: 0.6rem;
+                    }
+                  }
+                }
+              }
+              .courseDesc {
+                width: 75%;
+                height: 10vh;
+                padding: 1rem 0;
+                @include flexrow;
+                justify-content: space-between;
+                align-items: start;
+                column-gap: 2rem;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+                &::-webkit-scrollbar-track {
+                  background: #fad0f4;
+                }
+                &::-webkit-scrollbar-thumb {
+                  background: $lightVoilet;
+                  height: 2.5rem;
+                  border-radius: 10px;
+                }
+
+                @include largeDevice {
+                  height: 12vh;
+                  // padding: 0.5rem 0;
+                }
+                @include tabHorizontal {
+                  height: 12vh;
+                }
+                @include mediumDevice {
+                  height: 10vh;
+                  column-gap: 1rem;
+                }
+                @include extraSmallDevice {
+                  width: 70%;
+                  column-gap: 1rem;
+                  padding: 0.5rem 0;
+                  // overflow-x: hidden;
+                }
+
+                .about1 {
+                  width: 50%;
+                }
+                .about2 {
+                  width: 50%;
+                  padding-right: 1rem;
+                  @include extraSmallDevice {
+                    padding-right: 0rem;
+                  }
+                }
+
+                p {
+                  margin: 0;
+                  color: $color-black;
+                  @include extraSmallDevice {
+                    font-size: 0.8rem;
+                  }
+                  @include mediumMobile {
+                    font-size: 0.75rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.aboutSec {
+  width: 100%;
+  @include flexrow;
+
+  #aboutSec {
+    @include flexrow;
+    justify-content: space-between;
+    z-index: 1000;
+    @include tabHorizontal {
+      flex-direction: column;
+      row-gap: 6rem;
+    }
+    @include mediumDevice {
+      flex-direction: column;
+      row-gap: 6rem;
+    }
+    @include extraSmallDevice {
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+    .aboutTextBox {
+      width: 60%;
+      @include flexrow;
+      flex-direction: column;
+      align-items: start;
+      @include bigLaptop {
+        width: 55%;
+      }
+      @include largeDevice {
+        width: 55%;
+      }
+      @include tabHorizontal {
+        width: 85%;
+        align-items: center;
+      }
+      @include mediumDevice {
+        width: 90%;
+        align-items: center;
+      }
+      @include extraSmallDevice {
+        width: 90%;
+        align-items: center;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        text-align: left;
+        margin-bottom: 2rem;
+        @include tabHorizontal {
+          text-align: center;
+        }
+        @include mediumDevice {
+          text-align: center;
+        }
+        @include extraSmallDevice {
+          margin-bottom: 1.5rem;
+          font-size: 2rem;
+          text-align: center;
+        }
+        span {
+          margin: 0 1rem;
+          @include mediumDevice {
+            display: none;
+          }
+          @include extraSmallDevice {
+            display: none;
+          }
+          img {
+            width: 2rem;
+            height: 2rem;
+            object-fit: cover;
+          }
+        }
+      }
+      p {
+        @include tabHorizontal {
+          text-align: center;
+        }
+        @include mediumDevice {
+          text-align: center;
+        }
+        @include extraSmallDevice {
+          text-align: center;
+        }
+      }
+    }
+    .aboutImgBox {
+      width: 30%;
+      height: 100%;
+      position: relative;
+      @include bigLaptop {
+        width: 35%;
+      }
+      @include largeDevice {
+        width: 35%;
+      }
+      @include tabHorizontal {
+        width: 70%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+      @include mediumDevice {
+        width: 70%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+      @include extraSmallDevice {
+        width: 100%;
+        margin: 0 auto;
+        @include flexrow;
+      }
+      .aboutImgCont {
+        width: 28rem;
+        height: 26rem;
+        z-index: 10;
+        background-color: $darknavy;
+        border-radius: 1.8rem;
+        position: absolute;
+        top: -4%;
+        left: -10%;
+        @include flexrow;
+        @include tabHorizontal {
+          left: 18%;
+        }
+        @include smallTabHorizontal {
+          left: 12%;
+        }
+        @include mediumDevice {
+          left: 5%;
+        }
+        @include extraSmallDevice {
+          position: relative !important;
+          width: 100%;
+          left: 0;
+        }
+        .aboutImg {
+          width: 30rem;
+          height: 30rem;
+          object-fit: cover;
+          position: absolute;
+          top: -15%;
+          bottom: 0;
+          @include largeDevice {
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            top: 0;
+          }
+          @include extraSmallDevice {
+            position: relative;
+            width: 90%;
+            height: 90%;
+            top: 0;
+            object-fit: cover;
+          }
+          @include smallMobile {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            object-fit: cover;
+          }
+        }
+        .nameBox {
+          width: 75%;
+          padding: 1rem;
+          background-color: $white;
+          z-index: 100;
+          border-radius: 1rem;
+          position: absolute;
+          left: 13%;
+          bottom: -14%;
+          @include flexrow;
+          box-shadow: 0px 4px 4.8px 0px rgba(102, 99, 225, 0.21);
+          @include extraSmallDevice {
+            width: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+            // padding: 1rem 1.5rem;
+            text-align: center;
+          }
+          @include tabHorizontal {
+            width: 75%;
+            padding: 1rem;
+            text-align: center;
+          }
+          @include mediumMobile {
+            width: 75%;
+            padding: 1rem;
+            text-align: center;
+          }
+          @include smallMobile {
+            padding: 1rem;
+            width: 80%;
+            padding: 1rem;
+            text-align: center;
+          }
+
+          .trophyImg {
+            width: 3rem;
+            height: 3.5rem;
+            margin-right: 1rem;
+            @include extraSmallDevice {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+            @include smallMobile {
+              width: 2.5rem;
+              height: 2.5rem;
+            }
+          }
+          h5 {
+            font-size: 1.5rem;
+            @include extraSmallDevice {
+              font-size: 1.3rem;
+              text-align: center;
+            }
+            @include smallMobile {
+              font-size: 1.1rem;
+            }
+          }
+          h6 {
+            font-size: 1rem;
+            color: $desc;
+            margin: 0;
+            font-weight: 400;
+            @include extraSmallDevice {
+              text-align: center;
+            }
+            @include smallMobile {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .aboutback {
+        background-color: #fad0f4;
+        position: relative;
+        z-index: -1;
+        border-radius: 1.8rem;
+
+        @include extraSmallDevice {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.testimonialSec {
+  width: 100%;
+  #testimonialSec {
+    @include flexrow;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 5rem;
+      @include extraSmallDevice {
+        font-size: 2rem;
+      }
+    }
+    // h4{
+    //   // margin-bottom: 1rem;
+    // }
+  }
+}
+
+.contactSec {
+  width: 100%;
+  @include flexrow;
+
+  #contactSec {
+    #contactInner {
+      @include flexrow;
+      // height: 100%;
+      flex-direction: column;
+      text-align: center;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        @include extraSmallDevice {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        @include extraSmallDevice {
+          font-size: 1rem;
+        }
+      }
+
+      .contactCont {
+        width: 100%;
+        height: 100%;
+        @include flexrow;
+        justify-content: space-between;
+        column-gap: 3rem;
+        margin-top: 4rem;
+
+        @include smallTabHorizontal {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 4rem;
+          flex-wrap: wrap;
+          row-gap: 3rem;
+        }
+        @include mediumDevice {
+          flex-wrap: wrap;
+          row-gap: 3rem;
+        }
+        @include extraSmallDevice {
+          flex-wrap: wrap;
+          column-gap: 0;
+          row-gap: 5rem;
+        }
+
+        .contactForm {
+          width: 50%;
+          height: 100%;
+          border-radius: 1rem;
+          padding: 3rem 2rem;
+          background-color: $white;
+          border: 2px solid rgba(176, 176, 192, 0.3);
+          z-index: 10000;
+          position: relative;
+          @include flexrow;
+          flex-direction: column;
+          align-items: start;
+
+          @include smallTabHorizontal {
+            width: 100%;
+          }
+          @include mediumDevice {
+            width: 100%;
+          }
+          @include extraSmallDevice {
+            width: 100%;
+            padding: 2rem 1rem;
+          }
+          label {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: $desc;
+
+            @include extraSmallDevice {
+              font-size: 1rem;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $black;
+            margin-bottom: 2rem;
+            @include extraSmallDevice {
+              width: 100%;
+              padding: 0.5rem 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+          .checkCont {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            p {
+              margin-bottom: 0.8rem;
+            }
+            .checkBoxCont {
+              width: 100%;
+              @include flexrow;
+              flex-wrap: wrap;
+              justify-content: start;
+              row-gap: 0.5rem;
+              @include extraSmallDevice {
+                flex-direction: column;
+                align-items: start;
+              }
+              .checkBox {
+                margin-right: 1.5rem;
+                @include flexrow;
+                // width: 100px;
+                .check {
+                  margin: 0;
+                  margin-right: 0.5rem;
+                }
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          textarea {
+            width: 100%;
+            padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $black;
+            margin-bottom: 3rem;
+            @include extraSmallDevice {
+              width: 100%;
+              padding: 0.5rem 1rem;
+            }
+          }
+          #messageBtn {
+            position: relative;
+            float: right;
+
+            font-size: 1.1rem;
+            padding: 1.1em 0;
+            padding-left: 1.8em;
+            padding-right: 5em;
+            background-color: $voilet;
+            color: $white;
+            border: none;
+            border-radius: 2.5rem;
+            float: right;
+            @include largeDevice {
+              // width: 0%;
+              top: 12%;
+              right: 2%;
+              padding: 1.1em 2em;
+              padding-right: 6rem;
+              // height: 100%;
+              // padding: 2rem;
+            }
+
+            @include extraSmallDevice {
+              font-size: 0.95rem;
+              padding: 0.8rem 1.5rem;
+              float: left;
+            }
+
+            &::after {
+              content: "";
+              width: 2rem;
+              border: 1px solid #fff;
+              position: absolute;
+              top: 50%;
+              right: 15%;
+              border-bottom: 2px solid #fff;
+              @include largeDevice {
+                right: 15%;
+              }
+              @include extraSmallDevice {
+                display: none;
+              }
+            }
+          }
+        }
+        .contactTextCont {
+          width: 50%;
+          height: 100%;
+
+          @include smallTabHorizontal {
+            width: 100%;
+          }
+          @include mediumDevice {
+            width: 100%;
+          }
+          @include extraSmallDevice {
+            width: 100%;
+          }
+
+          .addBox {
+            width: 100%;
+            margin-bottom: 3rem;
+
+            @include extraSmallDevice {
+              margin-bottom: 2rem;
+            }
+
+            h5 {
+              text-align: left;
+              margin-bottom: 1rem;
+              font-size: 1.125rem;
+              font-weight: bold;
+              span {
+                padding: 0.4rem;
+                background-color: $blueVoilet;
+                border-radius: 0.3rem;
+                margin-right: 1rem;
+              }
+            }
+            p {
+              font-size: 1rem;
+              text-align: left;
+
+              span {
+                font-size: 1.1rem;
+                font-weight: 600;
+              }
+            }
+          }
+          .addBoxCont {
+            width: 100%;
+
+            @include flexrow;
+            column-gap: 1rem;
+            @include extraSmallDevice {
+              flex-direction: column;
+            }
+          }
+          p {
+            text-align: left;
+            margin: 0;
+            margin-bottom: 0.5rem;
+          }
+          .contactMap {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.featureSec {
+  width: 100%;
+  @include flexrow;
+  padding-top: 12rem;
+  position: relative;
+  @include tabHorizontal {
+    padding-top: 5rem;
+  }
+  @include mediumDevice {
+    padding-top: 5rem;
+  }
+  @include smallDevice {
+    padding-top: 5rem;
+  }
+  @include extraSmallDevice {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+
+  .ratingBar {
+    width: 1400px;
+    position: absolute;
+    top: -12%;
+    // margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    z-index: 1000;
+    border-radius: 1.8rem;
+    background-color: $lightVoilet;
+    @include largeDevice {
+      top: -8%;
+    }
+    @include tabHorizontal {
+      width: 90%;
+      position: relative;
+      margin-bottom: 5rem;
+    }
+    @include mediumDevice {
+      width: 95%;
+      position: relative;
+      margin-bottom: 5rem;
+    }
+    @include smallDevice {
+      width: 95%;
+      position: relative;
+      margin-bottom: 5rem;
+    }
+    @include extraSmallDevice {
+      width: 95%;
+      position: relative;
+      margin-bottom: 6rem;
+    }
+
+    #ratingInner {
+      // height: 100%;
+      @include flexrow;
+      justify-content: space-between;
+
+      @include tabHorizontal {
+        flex-direction: column;
+        row-gap: 3rem;
+        padding: 1rem;
+      }
+      @include mediumDevice {
+        flex-direction: column;
+        row-gap: 3rem;
+        padding: 1rem;
+      }
+      @include extraSmallDevice {
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1rem;
+      }
+
+      .ratingTextBox {
+        width: 40%;
+        @include flexrow;
+        justify-content: start;
+        column-gap: 2rem;
+        @include tabHorizontal {
+          width: 100%;
+          justify-content: center;
+        }
+        @include mediumDevice {
+          width: 100%;
+          justify-content: center;
+        }
+        @include extraSmallDevice {
+          width: 100%;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .ratebox {
+          padding: 1rem 1.5rem;
+          border-radius: 1.8rem;
+          border: 2px solid $darknavy;
+          @include flexrow;
+          flex-direction: column;
+          background-color: $white;
+          transform: translateY(-20%);
+          @include tabHorizontal {
+            width: 25%;
+            transform: translateY(0%);
+          }
+          @include mediumDevice {
+            width: 30%;
+            transform: translateY(0%);
+          }
+          @include extraSmallDevice {
+            width: 80%;
+            transform: translateY(0%);
+            margin-bottom: 1rem;
+          }
+          h3 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: $voilet;
+            margin: 0;
+            font-family: $desc-font;
+          }
+          p {
+            margin: 0.5rem 0;
+            color: $desc;
+          }
+          img {
+            width: 5rem;
+            height: 1.8rem;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+          color: $white;
+        }
+      }
+      .reviewBoxCont {
+        width: 50%;
+        @include flexrow;
+        justify-content: space-between;
+        transform: translateY(-30%);
+
+        @include tabHorizontal {
+          width: 80%;
+          transform: translateY(0%);
+        }
+        @include mediumDevice {
+          width: 100%;
+          transform: translateY(0%);
+        }
+        @include extraSmallDevice {
+          width: 100%;
+          transform: translateY(0%);
+          flex-direction: column;
+          row-gap: 1rem;
+        }
+
+        .reviewBox {
+          width: 30%;
+          @include flexrow;
+          flex-direction: column;
+          justify-content: start;
+          position: relative;
+          border-radius: 1rem;
+          background-color: $voilet;
+          padding: 0rem 1.5rem;
+          padding-bottom: 1rem;
+          @include extraSmallDevice {
+            width: 80%;
+            padding: 1rem;
+          }
+
+          .profilePic {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: 2px solid $white;
+            z-index: 10;
+            transform: translateY(-30%);
+            @include extraSmallDevice {
+              transform: translateY(0%);
+            }
+          }
+          h5 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: $white;
+          }
+          .googlelogo {
+            width: 1.5rem;
+            background-color: $white;
+            border-radius: 50%;
+            padding: 0.15rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      #arrow {
+        @include tabHorizontal {
+          display: none;
+        }
+        @include mediumDevice {
+          display: none;
+        }
+        @include extraSmallDevice {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #featureSec {
+    #featureInner {
+      h2 {
+        margin-bottom: 4rem;
+        @include extraSmallDevice {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .featureBoxCont {
+        width: 100%;
+        @include flexrow;
+        justify-content: space-between;
+        align-items: start;
+
+        @include smallTabHorizontal {
+          width: 85%;
+          margin: 0 auto;
+          flex-wrap: wrap;
+          row-gap: 2rem;
+        }
+        @include mediumDevice {
+          flex-wrap: wrap;
+          row-gap: 2rem;
+        }
+        @include extraSmallDevice {
+          // flex-wrap: wrap;
+          flex-direction: column;
+          row-gap: 2rem;
+        }
+
+        .featureBox {
+          width: 28%;
+          min-height: 20rem;
+          text-align: center;
+          @include flexrow;
+          flex-direction: column;
+          padding: 1rem;
+          border-radius: 1rem;
+          &:hover {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+              rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          }
+          transition: box-shadow 0.8s;
+          @include smallTabHorizontal {
+            width: 45%;
+
+            &:last-child {
+              width: 100%;
+            }
+          }
+          @include mediumDevice {
+            width: 45%;
+
+            &:last-child {
+              width: 100%;
+            }
+          }
+          @include extraSmallDevice {
+            width: 100%;
+          }
+          img {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 2rem;
+
+            @include extraSmallDevice {
+              width: 4rem;
+              height: 4rem;
+              margin-bottom: 1rem;
+            }
+          }
+          h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faqSec {
+  width: 100%;
+  @include flexrow;
+
+  #faqSec {
+    #faqInner {
+      h2 {
+        margin-bottom: 4rem;
+
+        @include mediumDevice {
+          font-size: 2rem;
+        }
+        @include extraSmallDevice {
+          font-size: 2rem;
+          margin-bottom: 3rem;
+        }
+      }
+      #faqCont {
+        .faq-card {
+          border: 1px solid #ccc;
+          margin-bottom: 1.5rem;
+          padding: 1.5rem 3.2rem;
+          border-radius: 40px;
+          border: 1px solid rgba(176, 176, 192, 0.3);
+          @include largeDevice {
+            padding: 1.5rem 2rem;
+          }
+          @include tabHorizontal {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+            // padding: 1.5rem 2.5rem;
+          }
+          @include mediumDevice {
+            padding: 1.5rem 2.5rem;
+          }
+          @include extraSmallDevice {
+            padding: 1rem !important;
+          }
+
+          &.activeAns {
+            background-color: $lightVoilet;
+
+            .question {
+              h4 {
+                color: $white;
+              }
+              .toggle {
+                background-color: $white;
+
+                .icon {
+                  color: $lightVoilet;
+                }
+              }
+            }
+            .answer {
+              display: block;
+              p {
+                font-size: 1rem;
+                color: $white;
+              }
+              a {
+                color: $white;
+                text-decoration: underline !important;
+              }
+            }
+          }
+
+          .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            column-gap: 1rem;
+
+            h4 {
+              font-size: 1.25rem;
+              font-weight: 500;
+              color: $black;
+              text-align: left;
+              margin: 0;
+              @include largeDevice {
+                font-size: 1.12rem;
+              }
+              @include mediumDevice {
+                font-size: 1.1rem;
+              }
+              @include smallDevice {
+                font-size: 1.1rem;
+              }
+              @include extraSmallDevice {
+                font-size: 1rem;
+              }
+            }
+            .toggle {
+              background-color: $lightVoilet;
+              // padding: 5px 10px;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              @include flexrow;
+
+              @include largeDevice {
+                width: 1.1rem;
+                height: 1.1rem;
+                padding: 0.9rem;
+              }
+              @include bigLaptop {
+                width: 1.1rem;
+                height: 1.1rem;
+                padding: 0.9rem;
+              }
+              @include smallDevice {
+                width: 1.1rem;
+                height: 1.1rem;
+                padding: 0.9rem;
+              }
+              @include extraSmallDevice {
+                width: 1.2rem;
+                height: 1.2rem;
+                padding: 0.9rem;
+              }
+
+              .icon {
+                font-size: 1.5rem;
+                color: white;
+
+                @include extraSmallDevice {
+                  font-size: 1.1rem;
+                }
+              }
+            }
+          }
+          .answer {
+            display: none;
+            margin-top: 10px;
+            p {
+              font-size: 1.125rem;
+
+              a {
+                color: $white;
+                text-decoration: underline;
+              }
+            }
+            ul {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

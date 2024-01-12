@@ -1,0 +1,182 @@
+.messageForm {
+  width: 30%;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  background-color: $white;
+  border: 2px solid rgba(176, 176, 192, 0.3);
+  z-index: 10000000;
+  @include flexrow;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 11%;
+  right: 10%;
+  @include bigLaptop {
+    width: 40%;
+    right: 2%;
+    padding: 2rem;
+  }
+  @include largeDevice {
+    width: 40%;
+    top: 12%;
+    right: 2%;
+    padding: 2rem;
+  }
+  @include tabHorizontal {
+    width: 50%;
+    top: 8%;
+    right: 2%;
+    padding: 2rem;
+  }
+  @include mediumDevice {
+    width: 60%;
+    top: 8%;
+    right: 2%;
+    padding: 2rem;
+  }
+  @include extraSmallDevice {
+    width: 90%;
+    top: 7%;
+    right: 2%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+  @include smallMobile {
+    top: 8%;
+    padding: 1rem;
+  }
+  label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $desc;
+
+    @include extraSmallDevice {
+      font-size: 0.9rem;
+    }
+  }
+  input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
+    margin-bottom: 2rem;
+    @include largeDevice {
+      margin-bottom: 1rem;
+    }
+    @include extraSmallDevice {
+      width: 100%;
+      padding: 0.2rem 1rem;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .checkCont {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    p {
+      margin-bottom: 0.8rem;
+      @include extraSmallDevice {
+        font-size: 0.9rem;
+      }
+    }
+    .checkBoxCont {
+      width: 100%;
+      @include flexrow;
+      flex-wrap: wrap;
+      justify-content: start;
+      row-gap: 0.5rem;
+      @include extraSmallDevice {
+        flex-direction: column;
+        align-items: start;
+      }
+      .checkBox {
+        margin-right: 1.5rem;
+        @include flexrow;
+        // width: 100px;
+        .check {
+          margin: 0;
+          margin-right: 0.5rem;
+        }
+        p {
+          margin: 0;
+          @include extraSmallDevice {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
+    margin-bottom: 3rem;
+    @include largeDevice {
+      margin-bottom: 1.5rem;
+    }
+    @include extraSmallDevice {
+      width: 100%;
+      padding: 0.2rem 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  #messageBtn {
+    position: relative;
+    float: right !important;
+    font-size: 1.1rem;
+    padding: 1em 0;
+    padding-left: 2em;
+    padding-right: 6em;
+    background-color: $voilet;
+    color: $white;
+    border: none;
+    border-radius: 2.5rem;
+    float: right;
+
+    @include tabHorizontal {
+      padding-left: 1.5rem;
+      padding-right: 5rem;
+    }
+
+    @include extraSmallDevice {
+      font-size: 0.95rem;
+      padding: 0.8rem 1.5rem;
+      float: left;
+    }
+    @include smallMobile {
+      font-size: 0.75rem;
+      padding: 0.8rem 1rem;
+      float: left;
+    }
+    @include largeDevice {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+      padding-right: 5rem;
+      float: left;
+    }
+
+    &::after {
+      content: "";
+      width: 2rem;
+      border: 1px solid #fff;
+      position: absolute;
+      top: 50%;
+      right: 15%;
+      border-bottom: 2px solid #fff;
+      @include largeDevice {
+        right: 15%;
+      }
+      @include extraSmallDevice {
+        display: none;
+      }
+    }
+  }
+}

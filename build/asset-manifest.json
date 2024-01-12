@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97d5398b.css",
+    "main.js": "/static/js/main.d77a90db.js",
+    "static/js/787.3e3955fd.chunk.js": "/static/js/787.3e3955fd.chunk.js",
+    "static/media/pexels-rodnae-productions-7647691 (Original).mp4": "/static/media/pexels-rodnae-productions-7647691 (Original).f8d42461da518293fb9e.mp4",
+    "static/media/aboutback.png": "/static/media/aboutback.9c2c52084feb42158662.png",
+    "static/media/course.png": "/static/media/course.fa7d4bbb9bbb31b934f1.png",
+    "static/media/aboutImg.png": "/static/media/aboutImg.ba39f826893e663802be.png",
+    "static/media/404.svg": "/static/media/404.9a024abd056afc30fad0fee34b28ddb1.svg",
+    "static/media/imoji.png": "/static/media/imoji.e59d00b770ee5f8b4ae5.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.c826b0165560636baf0b.png",
+    "static/media/pic4.jpg": "/static/media/pic4.59fb986787909048c3c1.jpg",
+    "static/media/member5.jpg": "/static/media/member5.1bcfc536c2a7baa087a9.jpg",
+    "static/media/girl.jpg": "/static/media/girl.fa81c91d16c2be6f324b.jpg",
+    "static/media/member3.jpg": "/static/media/member3.fd596ace6df7a1540def.jpg",
+    "static/media/review.png": "/static/media/review.2cfe7de97c7c211fbf3f.png",
+    "static/media/member4.jpg": "/static/media/member4.d09163c8899d37be6329.jpg",
+    "index.html": "/index.html",
+    "static/media/phone.svg": "/static/media/phone.4af23a3cec4abfeca1b392452373c92e.svg",
+    "static/media/mail.svg": "/static/media/mail.bb6ac7fedd81c4693d47b6865452efae.svg",
+    "static/media/instagram.svg": "/static/media/instagram.10bd5e2a88fd3e1dc337f8e9eff09653.svg",
+    "static/media/playbtn.svg": "/static/media/playbtn.d8a0fcddba0b8da5d428a43709d2bcf9.svg",
+    "static/media/quote.svg": "/static/media/quote.b59ad720122f9e393ca7af4fdcec4f67.svg",
+    "static/media/address.svg": "/static/media/address.147067f521fbc748d8ebcc3b3b7a779b.svg",
+    "static/media/twitter.svg": "/static/media/twitter.ed2664951de25f4e78b9d1a98cde302a.svg",
+    "static/media/facebook.svg": "/static/media/facebook.9ee273e58b9be1109a988fc7c6c49239.svg",
+    "static/media/hamburger.svg": "/static/media/hamburger.073a0597a43aa1aba023e1f1c51c8f0f.svg",
+    "static/media/cross.svg": "/static/media/cross.c3c236658e7d6e33ed44e9f8318300a7.svg",
+    "static/media/blueDots.svg": "/static/media/blueDots.fa3ee100c80898029ae98f9124653fa6.svg",
+    "static/media/pinkDots.svg": "/static/media/pinkDots.4180b9e93851ffb3f016df81abbc4c1e.svg",
+    "static/media/arrow.svg": "/static/media/arrow.89372ba67386257007625bdfdf192315.svg",
+    "main.97d5398b.css.map": "/static/css/main.97d5398b.css.map",
+    "main.d77a90db.js.map": "/static/js/main.d77a90db.js.map",
+    "787.3e3955fd.chunk.js.map": "/static/js/787.3e3955fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d5398b.css",
+    "static/js/main.d77a90db.js"
+  ]
+}

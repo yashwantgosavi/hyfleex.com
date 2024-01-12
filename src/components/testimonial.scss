@@ -1,0 +1,163 @@
+.testimonialSwiper {
+  width: 100%;
+  padding: 1rem 0;
+
+  .swiper-button-next {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50%;
+    padding: 1.4rem;
+    right: 0;
+    color: $white !important;
+    background-color: $lightVoilet !important;
+    @include extraSmallDevice {
+      padding: 1.2rem;
+    }
+
+    &::after {
+      font-size: 1.3rem;
+      @include extraSmallDevice {
+        font-size: 1rem;
+      }
+    }
+  }
+  .swiper-button-prev {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50%;
+    padding: 1.4rem;
+    left: 0;
+    color: $white !important;
+    background-color: $lightVoilet !important;
+    @include extraSmallDevice {
+      padding: 1.2rem;
+    }
+
+    &::after {
+      font-size: 1.3rem;
+      @include extraSmallDevice {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  @include flexrow;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .card {
+    flex: 0 0 calc(33.33% - 30px);
+    min-height: 32vh;
+    border-radius: 2rem;
+    border: 1px solid $grey;
+    @include tabHorizontal {
+      min-height: 40vh;
+    }
+    @include smallTabHorizontal {
+      min-height: 44vh;
+    }
+    @include mediumDevice {
+      min-height: 26vh;
+    }
+    @include smallDevice {
+      min-height: 35vh;
+    }
+  }
+
+  .card-content {
+    padding: 30px;
+    background: #fff;
+    border-radius: 2rem;
+    height: 100%;
+
+    @include tabHorizontal {
+      padding: 25px;
+    }
+    @include smallTabHorizontal {
+      padding: 18px;
+    }
+    @include mediumDevice {
+      padding: 20px;
+    }
+    @include extraSmallDevice {
+      padding: 25px;
+    }
+    .nameCont {
+      @include flexrow;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .left {
+        @include flexrow;
+        .profileBox {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          @include flexrow;
+          background-color: $voilet;
+          color: $white;
+          @include smallTabHorizontal {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+          @include extraSmallDevice {
+            width: 2rem;
+            height: 2rem;
+          }
+          @include smallMobile {
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+        }
+        h4 {
+          font-size: 1.125rem;
+          margin: 0;
+          margin-left: 1rem;
+          @include smallTabHorizontal {
+            font-size: 1.1rem;
+            margin-left: 0.5rem;
+          }
+          @include extraSmallDevice {
+            font-size: 1.1rem;
+            margin-left: 0.5rem;
+          }
+          @include smallMobile {
+            font-size: 1rem;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .quote {
+        @include smallTabHorizontal {
+          width: 2rem;
+        }
+        @include extraSmallDevice {
+          width: 2rem;
+        }
+        @include smallMobile {
+          width: 1.5rem;
+        }
+      }
+    }
+    p {
+      margin: 0;
+      @include extraSmallDevice {
+        font-size: 1rem;
+      }
+      @include smallMobile {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,348 @@
+[
+  {
+    "id": 0,
+    "courseName": "German",
+    "coursePic": "./png/german.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseIcon": "./png/a1.png",
+        "courseLevel": "A1-A2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand and use familiar, everyday expressions and very simple sentences, which relate to the satisfying of concrete needs. Can introduce him/herself and others as well as ask others about themselves e.g. where they live, who they know and what they own - and can respond to questions of this nature. Can communicate in a simple manner"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand sentences and commonly used expressions associated with topics directly related to his/her direct circumstances (e.g. personal information or information about his/her family, shopping, work, immediate surroundings). Can make him/herself understood in simple, routine situations dealing with a simple and direct exchange of information on familiar and common topics. Can describe his/her background and education, immediate surroundings and other things associated withimmediate needs in a simple way"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseIcon": "./png/b1.png",
+        "courseLevel": "B1-B2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": " Can understand the main points when clear, standard language is used and the focus is on familiar topics associated with work, school, leisure time, etc. Can deal with most situations typically encountered when travelling in the language region. Can express him/herself simply and coherently regarding familiar topics and areas of personal interest. Can report on experiences and events, describe dreams, hopes and goals as well as make short statements to justify or explain his/her own views and plans."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand the main contents of complex texts on concrete and abstract topics; also understands specialized discussions in his/her own primary area of specialization. Can communicate so spontaneously and fluently that a normal conversation with native speakers is easily possible without a great deal of effort on either side. Can express him/herself on a wide range of topics in a clear and detailed manner, explain his/her position on a current issue and indicate the benefits and drawbacks of various options."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseIcon": "./png/c1.png",
+        "courseLevel": "C1-C2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand a wide range of challenging, longer texts and also grasp implicit meanings. Can express him/herself spontaneously and fluently without having to search for words frequently and noticeably. Can use the language effectively and flexibly in his/her social and professional life or in training and studies. Can make clear, structured and detailed statements on complex topics and apply various means of text association appropriately in the process."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can effortlessly understand practically everything which he/she reads or hears. Can summarize information from various written and spoken sources, logically recounting the reasons and explanations. Can express him/herself spontaneously with high fluency and precision and also make finer nuances of meaning clear in more complex topics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "courseName": "English&nbsp;&&nbsp;IELTS",
+    "coursePic": "./png/e&i.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseLevel": "Listening",
+        "courseIcon": "./png/a1.png",
+        "check": false,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Multiple choice Diagram labelling Sentence completion Summary completion"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseLevel": "Reading",
+        "courseIcon": "./png/b1.png",
+        "check": false,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Multiple choice questions Sentence completion Summary completion Matching features Matching headings"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseLevel": "Writing",
+        "courseIcon": "./png/c1.png",
+        "check": false,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Two writing tasks"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "courseLevel": "Speaking",
+        "courseIcon": "./png/a1.png",
+        "check": false,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Three parts in this section"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "courseName": "Spanish",
+    "coursePic": "./png/spanish.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseIcon": "./png/a1.png",
+        "courseLevel": "A1-A2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand and use familiar, everyday expressions and very simple sentences, which relate to the satisfying of concrete needs. Can introduce him/herself and others as well as ask others about themselves e.g. where they live, who they know and what they own - and can respond to questions of this nature. Can communicate in a simple manner"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand sentences and commonly used expressions associated with topics directly related to his/her direct circumstances (e.g. personal information or information about his/her family, shopping, work, immediate surroundings). Can make him/herself understood in simple, routine situations dealing with a simple and direct exchange of information on familiar and common topics. Can describe his/her background and education, immediate surroundings and other things associated withimmediate needs in a simple way"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseIcon": "./png/b1.png",
+        "courseLevel": "B1-B2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": " Can understand the main points when clear, standard language is used and the focus is on familiar topics associated with work, school, leisure time, etc. Can deal with most situations typically encountered when travelling in the language region. Can express him/herself simply and coherently regarding familiar topics and areas of personal interest. Can report on experiences and events, describe dreams, hopes and goals as well as make short statements to justify or explain his/her own views and plans."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand the main contents of complex texts on concrete and abstract topics; also understands specialized discussions in his/her own primary area of specialization. Can communicate so spontaneously and fluently that a normal conversation with native speakers is easily possible without a great deal of effort on either side. Can express him/herself on a wide range of topics in a clear and detailed manner, explain his/her position on a current issue and indicate the benefits and drawbacks of various options."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseIcon": "./png/c1.png",
+        "courseLevel": "C1-C2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand a wide range of challenging, longer texts and also grasp implicit meanings. Can express him/herself spontaneously and fluently without having to search for words frequently and noticeably. Can use the language effectively and flexibly in his/her social and professional life or in training and studies. Can make clear, structured and detailed statements on complex topics and apply various means of text association appropriately in the process."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can effortlessly understand practically everything which he/she reads or hears. Can summarize information from various written and spoken sources, logically recounting the reasons and explanations. Can express him/herself spontaneously with high fluency and precision and also make finer nuances of meaning clear in more complex topics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "courseName": "Japanese",
+    "coursePic": "./png/japan.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseIcon": "./png/a1.png",
+        "courseLevel": "JLPT N4-N5",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "N5, N4 - Beginner Levels"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Learner can understand everyday conversations and respond back in simple vocabulary"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseIcon": "./png/b1.png",
+        "courseLevel": "JLPT N2-N3",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "N3, N2 - Intermediate Level & Advanced Intermediary"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Learner has functional working capability with the language and can handle majority of conversations in both official and everyday contexts"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseIcon": "./png/c1.png",
+        "courseLevel": "JLPT N1",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "This level calls for near native fluency where the learner is able to comprehend and respond to almost all types of content (written and oral)"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "courseName": "French",
+    "coursePic": "./png/french.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseIcon": "./png/a1.png",
+        "courseLevel": "A1-A2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand and use familiar, everyday expressions and very simple sentences, which relate to the satisfying of concrete needs. Can introduce him/herself and others as well as ask others about themselves e.g. where they live, who they know and what they own - and can respond to questions of this nature. Can communicate in a simple manner"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand sentences and commonly used expressions associated with topics directly related to his/her direct circumstances (e.g. personal information or information about his/her family, shopping, work, immediate surroundings). Can make him/herself understood in simple, routine situations dealing with a simple and direct exchange of information on familiar and common topics. Can describe his/her background and education, immediate surroundings and other things associated withimmediate needs in a simple way"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseIcon": "./png/b1.png",
+        "courseLevel": "B1-B2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": " Can understand the main points when clear, standard language is used and the focus is on familiar topics associated with work, school, leisure time, etc. Can deal with most situations typically encountered when travelling in the language region. Can express him/herself simply and coherently regarding familiar topics and areas of personal interest. Can report on experiences and events, describe dreams, hopes and goals as well as make short statements to justify or explain his/her own views and plans."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can understand the main contents of complex texts on concrete and abstract topics; also understands specialized discussions in his/her own primary area of specialization. Can communicate so spontaneously and fluently that a normal conversation with native speakers is easily possible without a great deal of effort on either side. Can express him/herself on a wide range of topics in a clear and detailed manner, explain his/her position on a current issue and indicate the benefits and drawbacks of various options."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseIcon": "./png/c1.png",
+        "courseLevel": "C1-C2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Can understand a wide range of challenging, longer texts and also grasp implicit meanings. Can express him/herself spontaneously and fluently without having to search for words frequently and noticeably. Can use the language effectively and flexibly in his/her social and professional life or in training and studies. Can make clear, structured and detailed statements on complex topics and apply various means of text association appropriately in the process."
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Can effortlessly understand practically everything which he/she reads or hears. Can summarize information from various written and spoken sources, logically recounting the reasons and explanations. Can express him/herself spontaneously with high fluency and precision and also make finer nuances of meaning clear in more complex topics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "courseName": "Sanskrit",
+    "coursePic": "./png/india.png",
+    "courseData": [
+      {
+        "id": 1,
+        "courseIcon": "./png/a1.png",
+        "courseLevel": "A1-A2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "courseIcon": "./png/b1.png",
+        "courseLevel": "B1-B2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "courseIcon": "./png/c1.png",
+        "courseLevel": "C1-C2",
+        "check": true,
+        "courseDesc": [
+          {
+            "id": 0,
+            "levelOneInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          },
+          {
+            "id": 1,
+            "levelTwoInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, laboriosam alias. Rem expedita optio eveniet veritatis libero, voluptas iusto quod"
+          }
+        ]
+      }
+    ]
+  }
+]

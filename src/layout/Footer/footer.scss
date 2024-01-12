@@ -1,0 +1,191 @@
+footer {
+  width: 100%;
+  @include flexrow;
+  padding: 1rem 0;
+
+  #footer {
+    @include extraLargeDevice {
+      max-width: 1800px !important;
+    }
+    .footerTextCont {
+      background-color: $blueVoilet;
+      border-top-left-radius: 2.5rem;
+      border-top-right-radius: 2.5rem;
+
+      @include extraSmallDevice {
+        // border-radius: 0;
+      }
+      #footerInner {
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        @include flexrow;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include extraSmallDevice {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+        @include smallTabHorizontal {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap: 1rem;
+        }
+        @include mediumDevice {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap: 1rem;
+        }
+        @include extraSmallDevice {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap: 1rem;
+        }
+
+        .addressBox {
+          @include smallTabHorizontal {
+            width: 100%;
+          }
+          @include mediumDevice {
+            width: 100%;
+          }
+          @include extraSmallDevice {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          h2 {
+            margin-bottom: 1rem;
+            text-align: left;
+            @include smallTabHorizontal {
+              text-align: center;
+            }
+            @include mediumDevice {
+              text-align: center;
+            }
+          }
+
+          img {
+            width: 8rem;
+            margin-bottom: 1rem;
+            @include extraSmallDevice {
+              width: 6rem;
+            }
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            @include smallTabHorizontal {
+              text-align: center;
+            }
+            @include mediumDevice {
+              text-align: center;
+            }
+            @include extraSmallDevice {
+              text-align: center;
+            }
+          }
+        }
+        .footerLinkBox {
+          @include flexrow;
+          column-gap: 1rem;
+          @include smallTabHorizontal {
+            width: 100%;
+          }
+          @include mediumDevice {
+            width: 100%;
+          }
+          li {
+            @include extraSmallDevice {
+              width: 100% !important;
+            }
+            a {
+              padding: 0.5rem;
+              font-size: 1rem;
+              font-weight: 500;
+
+              position: relative;
+              &:hover {
+                &::after {
+                  content: "";
+                  width: 100%;
+                  height: 1px;
+                  background-color: $desc;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                }
+              }
+              @include extraSmallDevice {
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+                // font-weight: 400;
+              }
+            }
+          }
+
+          @include extraSmallDevice {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 1rem;
+            padding: 0;
+            text-align: center;
+          }
+        }
+        .socialBox {
+          @include flexrow;
+          @include extraSmallDevice {
+            margin: 0 auto;
+          }
+          a {
+            margin-left: 0.5rem;
+            position: relative;
+            border-radius: 50%;
+            &:hover {
+              background-color: #fff;
+            }
+            transition: 0.5s;
+            @include smallTabHorizontal {
+              margin: 0;
+            }
+            @include mediumDevice {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .footerCopyCont {
+      background-color: $darkBlue;
+      padding: 0.8rem 0;
+      border-bottom-left-radius: 2.5rem;
+      border-bottom-right-radius: 2.5rem;
+      #footerCopy {
+        h2 {
+          font-size: 1rem;
+          font-weight: 400;
+          margin: 0;
+          @include extraSmallDevice {
+            font-size: 0.9rem;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+        @include flexrow;
+        justify-content: space-between;
+        @include extraSmallDevice {
+          flex-direction: column;
+          // align-items: start;
+          row-gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
